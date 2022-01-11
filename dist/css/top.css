@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+.top {
+  height: 1000px;
+  width: 100%;
+  background: #f2709c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ff9472), to(#f2709c));
+  background: linear-gradient(to right, #ff9472, #f2709c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.top-box {
+  position: relative;
+  padding: 30px 50px;
+  z-index: 1;
+  left: 12%;
+}
+
+.top-box-img {
+  height: 620px;
+  width: 550px;
+  background-image: url("../assets/images/img-b2.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.top-box-text {
+  position: relative;
+  height: 450px;
+  top: -580px;
+  left: 475px;
+  right: 0;
+  width: 380px;
+  background-color: white;
+}
+
+.top-box-text {
+  display: list-item;
+  list-style: none;
+  padding: 50px 40px;
+  font-family: "Licorice", cursive;
+}
+
+.top-box-text1 {
+  font-size: 50px;
+  font-weight: 500;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Comfortaa", cursive;
+  color: #fa255e;
+}
+
+.top-box-text1::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  margin-left: 5px;
+  padding-left: 5px;
+  background-color: black;
+  -webkit-animation: blink 0.5s infinite ease;
+          animation: blink 0.5s infinite ease;
+}
+
+.top-box-text2 {
+  letter-spacing: .5px;
+  word-spacing: 2px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.top-box-text3 {
+  width: 150px;
+  padding: 10px 8px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  border: 2px solid #fa255e;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+}
+
+.top-box-text3:hover {
+  background-color: #fa255e;
+  color: white;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-box {
+    position: relative;
+    padding: 0px 0px;
+    left: 0%;
+  }
+  .top-box-img {
+    height: 440px;
+    width: 280px;
+    left: 22%;
+    top: 30px;
+  }
+  .top-box-text {
+    position: relative;
+    height: 440px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 220px;
+    background-color: white;
+  }
+  .top-box-text {
+    display: list-item;
+    list-style: none;
+    padding: 20px 30px;
+    font-family: "Licorice", cursive;
+    height: 450px;
+    left: 10%;
+  }
+  .top-box-text1 {
+    font-size: 30px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  .top-box-text1::after {
+    content: '';
+    width: 2px;
+    height: 30px;
+  }
+  .top-box-text2 {
+    line-height: 1.5;
+  }
+  .top-box-text3 {
+    width: 170px;
+  }
+}
+/*# sourceMappingURL=top.css.map */
