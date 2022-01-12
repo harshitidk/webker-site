@@ -7,8 +7,10 @@
 .top-mid {
   position: relative;
   z-index: 0;
-  height: 1000px;
+  height: 550px;
   width: 100%;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .top-mid-img {
@@ -18,7 +20,6 @@
   background: url("../assets/images/img1.jpg");
   background-size: cover;
   background-position: center;
-  left: 45%;
   top: -200px;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -29,7 +30,6 @@
   height: 480px;
   width: 560px;
   top: -750px;
-  left: 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,8 +45,21 @@
 
 .top-mid-con div {
   position: relative;
-  height: 230px;
-  width: 270px;
+  height: 170px;
+  width: 210px;
   background-color: white;
+  padding: 30px;
+}
+
+.top-mid-con div h3 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+.top-mid-con div p {
+  line-height: 1.5;
+  word-spacing: 2px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=top-mid.css.map */

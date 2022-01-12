@@ -14,7 +14,7 @@
   padding: 30px 50px;
   padding-top: 60px;
   z-index: 1;
-  left: 12%;
+  left: 0;
 }
 
 .top-box-img {
@@ -32,8 +32,6 @@
   position: relative;
   height: 450px;
   top: -580px;
-  left: 475px;
-  right: 0;
   width: 380px;
   background-color: white;
 }
