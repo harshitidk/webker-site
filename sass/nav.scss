@@ -5,7 +5,11 @@ body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background-color: rgba($color: #c39ea0, $alpha: .5);
+    // background-color: rgba($color: #c39ea0, $alpha: .5);
+    background: #FC354C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 *
@@ -31,9 +35,10 @@ body
     {
         position: absolute;
         height: 500px;   
-        background: #f2709c;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ff9472, #f2709c);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #FC354C;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0ABFBC, hsl(353, 97%, 60%));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0ABFBC , #f58290); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                                 
         color: $col5;
         top: 106px;
         right: 0;
@@ -101,7 +106,7 @@ body
 {
     width: 22px;
     height: 3px;
-    background-color: $col2;
+    background-color: $col5;
     margin: 4px;
     position: relative;
 }
@@ -155,6 +160,11 @@ body
 
 @media (max-width: 600px)
 {
+    body 
+    {
+        overflow-x: hidden;
+    }
+
     .navbar
     {
         padding: 20px 40px;

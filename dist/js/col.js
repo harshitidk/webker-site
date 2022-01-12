@@ -10,11 +10,11 @@ function change_color()
         bur.forEach(li => {
             if(d%2==0)
             {
-                li.style.backgroundColor = 'rgb(250, 37, 94)';
+                li.style.backgroundColor = 'white';
             }
             else 
             {
-                li.style.backgroundColor = 'white';
+                li.style.backgroundColor = 'rgb(250, 37, 94)';
             }
         })
     })

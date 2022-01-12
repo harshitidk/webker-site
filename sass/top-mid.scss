@@ -2,11 +2,47 @@
 
 .top-mid
 {
+    position: relative;
     z-index: 0;
     height: 1000px;
     width: 100%;
-    background: #ECE9E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: #BBD2C5;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
+
+    &-img
+    {
+        position: relative;
+        height: 600px;
+        width: 580px;
+        background: url('../assets/images/img1.jpg');
+        background-size: cover;
+        background-position: center;
+        left: 45%;
+        top: -200px;
+        box-shadow: 5px 5px 10px rgba($color: black, $alpha: .5);
+    }
+
+    &-con
+    {
+        position: relative;
+        height: 480px;
+        width: 560px;
+        // background-color: grey;
+        top: -750px;
+        left: 12%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        div
+        {
+            position: relative;
+            height: 230px;
+            width: 270px;
+            background-color: white;
+        }
+    }
 }

@@ -7,17 +7,12 @@
 .top {
   height: 1000px;
   width: 100%;
-  background: #f2709c;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#ff9472), to(#f2709c));
-  background: linear-gradient(to right, #ff9472, #f2709c);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .top-box {
   position: relative;
   padding: 30px 50px;
+  padding-top: 60px;
   z-index: 1;
   left: 12%;
 }
@@ -123,6 +118,9 @@
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .top-box {
     position: relative;
     padding: 0px 0px;
