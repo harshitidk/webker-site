@@ -8,7 +8,12 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background-color: rgba(195, 158, 160, 0.5);
+  background: #FC354C;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#0ABFBC), to(#FC354C));
+  background: linear-gradient(to right, #0ABFBC, #FC354C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * {
@@ -38,11 +43,11 @@ body {
 .navbar .nav-links {
   position: absolute;
   height: 500px;
-  background: #f2709c;
+  background: #FC354C;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#ff9472), to(#f2709c));
-  background: linear-gradient(to right, #ff9472, #f2709c);
+  background: -webkit-gradient(linear, left top, right top, from(#0ABFBC), to(#f58290));
+  background: linear-gradient(to right, #0ABFBC, #f58290);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   top: 106px;
@@ -110,7 +115,7 @@ body {
 .bur {
   width: 22px;
   height: 3px;
-  background-color: #fa255e;
+  background-color: white;
   margin: 4px;
   position: relative;
 }
@@ -186,6 +191,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar {
     padding: 20px 40px;
   }
